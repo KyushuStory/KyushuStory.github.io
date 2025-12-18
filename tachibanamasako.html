@@ -1,21 +1,39 @@
 <html><title>Hanami Elementary School Speech - Tachibana Masako</title>
+<head><meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 p{
-    width:40em;
-    margin-left:auto;
-    margin-right:auto;
-    text-align: left;
-    
+    margin: 0 0 1em 0;
 }
-
+body {
+    font-size: 16px;   /* default, good */
+    line-height: 1.6;  /* critical for mobile */
+}
+.background { 
+      background-color: powderblue;
+}
 .center{
-    width:80%
-    margin: 0 auto;
-    text-align:center;
+    display: block;
+    max-width: 40em;   /* desktop limit */
+    width: 100%;       /* mobile-friendly */
+    background-color: white;
+    border-radius: 8px;
+    text-align: left;
+    color: black;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    padding: 1rem;
 }
-    
+@media (max-width: 480px) {
+    .center {
+        border-radius: 0;
+        padding: 0.75rem;
+        margin-left: 10px;
+    }
+}
 </style>
-    <body>
+</head>
+<body class="body" style="background-color:powderblue;">
 <div class="center">    
 <p>[hanami elementary]
 Good morning. My name is Masako Tachibana.  I have lived in Koga City, Japan, for 40 years.</p>
